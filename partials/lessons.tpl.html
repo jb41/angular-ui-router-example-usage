@@ -1,0 +1,25 @@
+<div class="row">
+
+  <div class="col-sm-8">
+    <div class="box box-yellow">
+      <h1>Lessons ::{{lessonId}}::</h1>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="box box-orange">
+      <ul>
+        <li ng-repeat="lessonNo in allLessons">
+          <a ui-sref="programs.parts.lessons({programId: programId, partId: partId, lessonId: lessonNo})" ui-sref-active="active">
+            ::{{lessonNo}}::
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <style type="text/css">
+      /*.box { margin: 40px; }*/
+      .box-red { background-color: red; }
+      .box-blue { background-color: lightblue; }
+      .box-yellow { background-color: yellow; }
+      .box-orange { background-color: orange; }
+      .box-green { background-color: green; }
+      h1 { margin: 10px; }
+      .active { font-weight: 700; font-size: 24px; background-color: pink; }
+    </style>
+
+    <base href="/">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div ui-view=""></div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+  <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

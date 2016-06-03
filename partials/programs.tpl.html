@@ -1,0 +1,26 @@
+<div class="box box-red">
+  <ul class="list-inline">
+    <li ng-repeat="programNo in allPrograms">
+      <a ui-sref="programs({programId: programNo})" ui-sref-active="active">
+        ::{{programNo}}::
+      </a>
+    </li>
+  </ul>
+
+  <h1>Programs ::{{programId}}::</h1>
+
+  <ul class="list-inline">
+    <li>
+      <a ui-sref="programs.workbook()" ui-sref-active="active">
+        ::workbook::
+      </a>
+    </li>
+    <li ng-repeat="partNo in allParts">
+      <a ui-sref="programs.parts({programId: programId, partId: partNo})" ui-sref-active="active">
+        ::{{partNo}}::
+      </a>
+    </li>
+  </ul>
+
+  <div ui-view=""></div>
+</div>
