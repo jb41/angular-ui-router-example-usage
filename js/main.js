@@ -13,7 +13,7 @@ function ProgramsController(hub, params, state) {
 
 myapp.controller('ProgramsController', function($scope, $stateParams, $state) {
   return ProgramsController($scope, $stateParams, $state); 
-});
+}); 
 
 myapp.config(function($stateProvider, $locationProvider) {
   // $locationProvider.html5Mode({ enabled: true, requireBase: false });
